@@ -1,0 +1,11 @@
+.boxes {
+	display: inline-block;
+	padding: 10%;
+	text-align: center;
+	background-color: grey;
+	margin: 10px;
+}
+
+.collapsible{
+	margin: 10px;
+}
