@@ -1,0 +1,23 @@
+
+body { 
+	background-image:url('../images/foodImage1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+h1 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #FFD700;
+	
+	font-weight: bolder;
+	text-align: center;
+	font-size: 175px;
+	margin-top: 50px;
+}
+
+#search { 
+	
+	background-color: #DC143C;
+	border-style: inset;
+	
+}
