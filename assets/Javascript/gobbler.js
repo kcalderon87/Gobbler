@@ -1,14 +1,33 @@
-console.log("start menu")
+$('document').ready(function(){
+//console.log("start menu")
 
-var imagesArray=['../images/foodImage1.jpg', '../images/foodImage2.jpg', '../images/foodImage3.jpg', '../images/foodImage4.jpg', '../images/foodImage5.jpg', '../images/foodImage6.jpg', '../images/foodImage7.jpg', '../images/foodImage8.jpg', '../images/foodImage10.jpg'];
+// holds background images
+var imgArray=['../Gobbler/assets/images/foodImage1.jpg', 
+			  '../Gobbler/assets/images/foodImage2.jpg', 
+			  '../Gobbler/assets/images/foodImage3.jpg', 
+			  '../Gobbler/assets/images/foodImage4.jpg', 
+			  '../Gobbler/assets/images/foodImage5.jpg', 
+			  '../Gobbler/assets/images/foodImage6.jpg', 
+			  '../Gobbler/assets/images/foodImage7.jpg', 
+			  '../Gobbler/assets/images/foodImage8.jpg', 
+			  '../Gobbler/assets/images/foodImage10.jpg'
+			  ];
 
-console.log("yummy food: " + imagesArray[4])
+console.log("yummy food: " + imgArray[4])
 
+//random number generator for images in background
+var i = Math.floor(imgArray.length * Math.random())
 
-function randomFoodImages(){
+//holds the value assigned to background image
+var imageBackground = 'url(' + imgArray[i] + ')';
 
-//show random image on page refresh
-for (var i = 0; i < imagesArray.length; i++)
+console.log(imageBackground)
 
-console.log["food images: " + i]
-}
+//when the page loads perform css functions
+$('body').css({
+	"background-image": imageBackground,
+	"background-repeat": "no-repeat",
+	"background-size": "100%"
+})
+
+}) // document ready 
