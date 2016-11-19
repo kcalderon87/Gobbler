@@ -24,10 +24,22 @@ h1 {
 	margin-top: 50px;
 }
 
+nav {
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	
+}
+
+.material-icons {
+	padding-left: ;
+}
+
 #search { 
 	
-	background-color: #DC143C;
+	background-color:red;
 	border-style: inset;
+	border-color: grey;
 	
 }
 
