@@ -1,13 +1,15 @@
 
 $(document).ready(function(){
 
-var search = prompt("enter food");
+var baseImage = "https://spoonacular.com/recipeImages/"
 var counter = 0;
 var counter2 = 0;
 
-console.log(search)
 
-$("#test").on("click",function(){
+
+$("#searchBtn").on("click",function(){
+   var search = $("#search").val()
+   console.log(search)
 
 $.ajax({ // begin ajax for food search
 
@@ -17,6 +19,8 @@ $.ajax({ // begin ajax for food search
       }).done(function(result){
          console.log(result)
          console.log(result.results[0].title + " recipe title")
+         $("#image").attr("src", baseImage + result.results[0].image) // adding image to image div
+            console.log(baseImage + result.results[0].image + ' testing image link')
 
          for(var i = 0; i< result.results.length; i++){ // begin for loop to attach id's from results into another AJAX call to get recipe information
 
