@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-var search = prompt("enter food");
+
 var counter = 0;
 var counter2 = 0;
 
