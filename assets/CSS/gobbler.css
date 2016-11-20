@@ -23,7 +23,9 @@ h1 {
 	font-size: 175px;
 	margin-top: 50px;
 }
-
+h3{
+	text-align: center;
+}
 nav {
 	position: absolute;
 	left: 20%;
@@ -44,13 +46,20 @@ nav {
 }
 
 .boxes {
-	display: inline-block;
-	padding: 10%;
+
+
 	text-align: center;
-	background-color: grey;
-	margin: 10px;
+	
+	
 }
 
 .collapsible{
 	margin: 10px;
+}
+.foodPic{
+	height: 200px;
+    width: 350px;
+}
+.collapsible-body{
+	background: white;
 }
