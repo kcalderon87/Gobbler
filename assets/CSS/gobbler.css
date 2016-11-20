@@ -1,15 +1,13 @@
 
-
-/*body { */
-/*	background-image: url('../images/foodImage1.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;*/
-/*}*/
+.container{
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width:100%;
+}
 
 h1 {
-	
 	font-family: 'Pacifico', cursive;
-	margin: ;
 	color: #FFD700;
 	border: 5px double grey;
 	border-radius: 100px;
@@ -17,30 +15,15 @@ h1 {
 	padding-top: 20px;
 	margin-left: 200px;
 	margin-right: 200px;
-	
 	font-weight: bolder;
 	text-align: center;
-	font-size: 175px;
-	margin-top: 50px;
-}
-
-nav {
-	position: absolute;
-	left: 20%;
-	right: 20%;
-	
-}
-
-.material-icons {
-	padding-left: ;
+	font-size: 175px;	
 }
 
 #search { 
-	
 	background-color:red;
 	border-style: inset;
 	border-color: grey;
-	
 }
 
 .boxes {
@@ -54,3 +37,28 @@ nav {
 .collapsible{
 	margin: 10px;
 }
+
+
+/*-----------Media Queries-------------- */
+
+@media #{$small-and-down} {
+    /* styles for small screens and down*/
+}
+@media #{$medium-and-up} {
+    /* styles for medium screens and larger*/
+}
+@media #{$medium-and-down} {
+    /* styles for medium screens and down*/
+}
+@media #{$large-and-up} {
+    /*styles for large screens and up*/
+}
+
+
+
+
+
+
+
+
+
