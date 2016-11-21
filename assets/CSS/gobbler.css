@@ -1,4 +1,6 @@
 
+/*deleted   .body{}*/
+
 .container{
     max-height: 100%;
     max-width: 100%;
@@ -6,6 +8,7 @@
     width:100%;
 }
 
+/*deleted   margin:; and margin-top: 50px;*/
 h1 {
 	font-family: 'Pacifico', cursive;
 	color: #FFD700;
@@ -20,38 +23,39 @@ h1 {
 	font-size: 175px;	
 }
 
+/*deleted  h3{}, nav{}, .material-icons{}  */
+
 #search { 
 	background-color:red;
 	border-style: inset;
 	border-color: grey;
 }
 
+/*deleted items to match what lance has on his css, pg 2*/
 .boxes {
-	display: inline-block;
-	padding: 10%;
+	
 	text-align: center;
-	background-color: grey;
-	margin: 10px;
+	
 }
 
 .collapsible{
 	margin: 10px;
 }
 
+ 
+/*-----------Media Queries commented out-------------- */
 
-/*-----------Media Queries-------------- */
-
-@media #{$small-and-down} {
+/*@media #{$small-and-down} {
     /* styles for small screens and down*/
-}
+/*}
 @media #{$medium-and-up} {
-    /* styles for medium screens and larger*/
-}
-@media #{$medium-and-down} {
+     styles for medium screens and larger
+}*/
+/*@media #{$medium-and-down} {*/
     /* styles for medium screens and down*/
 }
-@media #{$large-and-up} {
-    /*styles for large screens and up*/
+/*@media #{$large-and-up} {
+*/    /*styles for large screens and up*/
 }
 
 
