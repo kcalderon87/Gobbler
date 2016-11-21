@@ -41,7 +41,13 @@ h1 {
 .collapsible{
 	margin: 10px;
 }
-
+.foodPic{
+	height: 200px;
+    width: 350px;
+}
+.collapsible-body{
+	background: white;
+}
  
 /*-----------Media Queries commented out-------------- */
 
