@@ -10,6 +10,8 @@
     <!-- Compiled and minified CSS -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 
+  	<link rel="stylesheet" type="text/css" href="assets/css/spoon.css">
+
   	<!-- Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/gobbler.css">
 
@@ -20,14 +22,18 @@
 <body>
 	
 	<h3>Gobbler</h3>
+	
+<div class = "row"> <!-- row to contain recipe images and instructions -->
 
 	<div>
 		<button id="searchAgain">Search Again</button>
 	</div>
 
-	<div class="boxes" class="image">Image Area</div>
-	<div class="boxes" class="recipe">Recipe Area</div>
+	<div class="boxes col s12 m6" id="image"></div>
+	<div class="boxes col s12 m6"" id="recipe">Recipe Instructions:</div>
 	<div class="boxes" class="scaling">Scaling and Conversion</div>
+
+</div>	<!-- end row to contain recipe images/instructions -->
 
 	<div class="">
 		<ul class="collapsible" data-collapsible="accordion">
@@ -37,7 +43,7 @@
 	    </li>
 	    <li>
 	      <div class="collapsible-header"><i class="material-icons">assessment</i>Nutrition</div>
-	      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+	      <div class="collapsible-body"><p id = "nutritionInformation"></p></div>
 	    </li>
 	    <li>
 	      <div class="collapsible-header"><i class="material-icons">shopping_basket</i>Cost Analysis</div>
@@ -72,5 +78,6 @@
     $('.collapsible').collapsible();
   });
   </script>
+   <script type="text/javascript" src ="assets/Javascript/spoonacular.js"></script>
 </body>
 </html>
