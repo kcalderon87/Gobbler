@@ -83,9 +83,12 @@ function repopulate() {
 
 //---------------------Start of Bing API ------------------
 		
+$(document).ready(function(){
+
+		
 	$("#searchBtn").on("click", function (){
 
-		var searchvid = $("#searchvid").val().trim();
+		var searchvid = $("#search").val().trim();
 		var params = {
 	    	
 	        "q": searchvid,
@@ -112,9 +115,11 @@ function repopulate() {
 
 		
 			// $("#videoplayer").html(response.value[0].embedHtml); 
-			
- 			for(var i =0; i < response.value.length; i++){ // begin loop to get urls
- 			$("#videoPlayer").html(response.value[i].embedHtml)
- 			}
+			$("#vid1").html(response.value[0].embedHtml);
+ 			$("#vid2").html(response.value[1].embedHtml);
+ 			$("#vid3").html(response.value[2].embedHtml);
+ 			$("#vid4").html(response.value[3].embedHtml);
+ 			
+			});
 		});
 	});
