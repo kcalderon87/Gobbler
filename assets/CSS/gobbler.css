@@ -23,9 +23,11 @@ h1 {
 	font-size: 175px;
 	margin-top: 50px;
 }
+
 h3{
 	text-align: center;
 }
+
 nav {
 	position: absolute;
 	left: 20%;
@@ -56,6 +58,7 @@ nav {
 .collapsible{
 	margin: 10px;
 }
+
 .foodPic{
 	height: 200px;
     width: 350px;

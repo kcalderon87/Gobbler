@@ -25,8 +25,13 @@
 	
 <div class = "row"> <!-- row to contain recipe images and instructions -->
 
+	<div>
+		<button id="searchAgain">Search Again</button>
+	</div>
+
 	<div class="boxes col s12 m6" id="image"></div>
 	<div class="boxes col s12 m6"" id="recipe">Recipe Instructions:</div>
+	<div class="boxes" class="scaling">Scaling and Conversion</div>
 
 </div>	<!-- end row to contain recipe images/instructions -->
 
@@ -50,7 +55,11 @@
 	    </li>
 	    <li>
 	      <div class="collapsible-header"><i class="material-icons">note_add</i>Notes</div>
-	      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+	      <div class="collapsible-body" id="notes">
+		      <p>Enter Your Cooking Notes Here: </p> 
+		      <input type="text" id="notes-added" />
+		      <button id="addtoDoNotes">Add Note</button>
+	      </div>
 	    </li>
 	  </ul>
   </div>
@@ -60,6 +69,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/localstorage.js"></script>
     
   <script type="text/javascript">
   	

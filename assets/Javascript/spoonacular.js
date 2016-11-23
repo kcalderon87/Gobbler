@@ -23,11 +23,19 @@ $.ajax({ // begin ajax for food search
          type: "GET",
          beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', 'sx6jftIna4mshjGfZprlulSh7Zdnp1Wp8chjsnIdYQuH4wgaUy');},
          }).done(function(result){
+<<<<<<< HEAD
+               console.log(result)
+               console.log(result.results[0].title + " recipe title")
+                     localStorage.setItem("recipeName", JSON.stringify(result));
+                     for(var i = 0; i< result.results.length; i++){ // begin for loop to attach id's from results into another AJAX call to get recipe information
+
+=======
                // console.log(result)
                // console.log(result.results[0].title + " recipe title")
                      localStorage.setItem("recipeName", JSON.stringify(result));
                      for(var i = 0; i< result.results.length; i++){ // begin for loop to attach id's from results into another AJAX call to get recipe information
                       console.log(result);
+>>>>>>> master
                       var recipeArray =[];
                       var ingredientsArray =[];
          
@@ -40,7 +48,11 @@ $.ajax({ // begin ajax for food search
                   counter++;
                   recipeArray.push(response);
                  
+<<<<<<< HEAD
+                  console.log(counter);
+=======
                   // console.log(counter);
+>>>>>>> master
                   if (counter === result.results.length) {
                      
                      
@@ -48,7 +60,11 @@ $.ajax({ // begin ajax for food search
                               ingredientsArray.push(recipeArray[0].extendedIngredients[i].originalString)
            
                               }// end for loop
+<<<<<<< HEAD
+                              console.log(ingredientsArray)
+=======
                               // console.log(ingredientsArray)
+>>>>>>> master
                                localStorage.setItem("ingredientsList", JSON.stringify(ingredientsArray));
                               counter2++;
 
@@ -58,7 +74,11 @@ $.ajax({ // begin ajax for food search
                            url: 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/visualizeNutrition',
                            type: "POST",
                            data: {
+<<<<<<< HEAD
+                                 defaultCss: false,
+=======
                                  defaultCss: true,
+>>>>>>> master
                                  ingredientList:ingredientsArray.join("\n")  , // try putting the actual ingredient name in here 
                                  servings: 2
                               },
@@ -70,7 +90,11 @@ $.ajax({ // begin ajax for food search
 
                                        if(counter3 === 1){
                                        changeLocation();
+<<<<<<< HEAD
+                                       console.log(counter3 + "  counter 3")
+=======
                                        // console.log(counter3 + "  counter 3")
+>>>>>>> master
                                        }                       
                                  }); // end internal ajax call
                            
@@ -105,6 +129,18 @@ var page2recipe = JSON.parse(localStorage.getItem("recipeName"));
 var page2ingredients = JSON.parse(localStorage.getItem("ingredientsList"))
 var page2nutrition = JSON.parse(localStorage.getItem("nutrition"))
 
+<<<<<<< HEAD
+console.log(page2recipe);
+
+console.log(page2recipe.results[0].title)
+console.log(page2ingredients[1] + 'page 2 ingredients')
+console.log(page2nutrition);
+
+var imageContainer = $("<img>");
+     imageContainer.addClass("foodPic")
+    $(imageContainer).attr("src", baseImage + page2recipe.results[0].image) // adding image to image div
+    $("#image").append(imageContainer)
+=======
 console.log(page2ingredients + "ingredients array");
 // console.log(page2nutrition + "nutrition array");
 
@@ -143,5 +179,6 @@ var ingredientsContainer = $("<ul>");
  $("#nutritionInformation").append(page2nutrition);
 
 
+>>>>>>> master
 
 });// end doc ready
