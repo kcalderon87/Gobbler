@@ -1,55 +1,75 @@
 
-
-/*body { */
-/*	background-image: url('../images/foodImage1.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;*/
-/*}*/
+.container{
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width:100%;
+}
 
 h1 {
-	
 	font-family: 'Pacifico', cursive;
-	margin: ;
-	color: #FFD700;
-	border: 5px double grey;
-	border-radius: 100px;
-	background-color: red;
-	padding-top: 20px;
-	margin-left: 200px;
-	margin-right: 200px;
-	
-	font-weight: bolder;
 	text-align: center;
-	font-size: 175px;
-	margin-top: 50px;
+	font-size: 200px;
+	color: #4d2800;
+	border: 20px double #4d2800;
+	border-radius: 200px;
+	padding-top: 30px;
+	margin-right: 425px;
+	margin-left: 425px;
+	background: rgba(255,238,204, 0.6);
 }
-h3{
-	text-align: center;
+
+nav{
+	background: rgba(77,40,0, 0.6);
+    border: 10px double #ffeecc;
 }
-nav {
-	position: absolute;
-	left: 20%;
-	right: 20%;
+
+nav:hover{
+	background: rgba(255,238,204, 0.6);
+    border: 10px double #4d2800;
+}
+
+i.material-icons {
+	color: #ffeecc;
 	
 }
 
-.material-icons {
-	padding-left: ;
+.btn-large {
+	color: #ffeecc;
+	background: rgba(77,40,0, 0.6);
+    border: 10px double #ffeecc;
 }
 
-#search { 
-	
-	background-color:red;
-	border-style: inset;
-	border-color: grey;
-	
+.btn-large:hover {
+	background: rgba(255,238,204, 0.6);
+	color: #4d2800;
+	border: 10px double #4d2800;
 }
 
+i.material-icons:hover {
+	color: #4d2800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*deleted items to match what lance has on his css, pg 2*/
 .boxes {
-
-
-	text-align: center;
 	
+	text-align: center;
 	
 }
 
@@ -63,3 +83,27 @@ nav {
 .collapsible-body{
 	background: white;
 }
+ 
+/*-----------Media Queries commented out-------------- */
+
+/*@media #{$small-and-down} {
+    /* styles for small screens and down*/
+/*}
+@media #{$medium-and-up} {
+     styles for medium screens and larger
+}*/
+/*@media #{$medium-and-down} {*/
+    /* styles for medium screens and down*/
+}
+/*@media #{$large-and-up} {
+*/    /*styles for large screens and up*/
+}
+
+
+
+
+
+
+
+
+
