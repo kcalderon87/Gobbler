@@ -1,6 +1,4 @@
 
-/*deleted   .body{}*/
-
 .container{
     max-height: 100%;
     max-width: 100%;
@@ -8,47 +6,83 @@
     width:100%;
 }
 
-/*deleted   margin:; and margin-top: 50px;*/
 h1 {
 	font-family: 'Pacifico', cursive;
-	color: #FFD700;
-	border: 5px double grey;
-	border-radius: 100px;
-	background-color: #b71c1c;
-	padding-top: 20px;
-	margin-left: 400px;
-	margin-right: 400px;
-	font-weight: bolder;
 	text-align: center;
-	font-size: 175px;	
+	font-size: 200px;
+	color: #4d2800;
+	border: 20px double #4d2800;
+	border-radius: 200px;
+	padding-top: 30px;
+	margin-right: 425px;
+	margin-left: 425px;
+	background: rgba(255,238,204, 0.6);
+}
+
+nav{
+	background: rgba(77,40,0, 0.6);
+    border: 10px double #ffeecc;
+}
+
+nav:hover{
+	background: rgba(255,238,204, 0.6);
+    border: 10px double #4d2800;
+}
+
+i.material-icons {
+	color: #ffeecc;
+	
+}
+
+.btn-large {
+	color: #ffeecc;
+	background: rgba(77,40,0, 0.6);
+    border: 10px double #ffeecc;
+}
+
+.btn-large:hover {
+	background: rgba(255,238,204, 0.6);
+	color: #4d2800;
+	border: 10px double #4d2800;
+}
+
+i.material-icons:hover {
+	color: #4d2800;
 }
 
 
-/*deleted  h3{}, nav{}, .material-icons{}  */
-#search { 
-	background-color:#b71c1c;
-	border-style: inset;
-	border-color: grey;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*deleted items to match what lance has on his css, pg 2*/
-.boxes {	
-	text-align: center;	
+.boxes {
+	
+	text-align: center;
+	
 }
 
 .collapsible{
 	margin: 10px;
 }
-
 .foodPic{
 	height: 200px;
     width: 350px;
 }
-
 .collapsible-body{
 	background: white;
 }
-
  
 /*-----------Media Queries commented out-------------- */
 
@@ -64,4 +98,12 @@ h1 {
 /*@media #{$large-and-up} {
 */    /*styles for large screens and up*/
 }
+
+
+
+
+
+
+
+
 
