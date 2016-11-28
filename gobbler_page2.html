@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
 	<title>Search Results</title>
-	
 	<!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
     <!-- Compiled and minified CSS -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-
   	<link rel="stylesheet" type="text/css" href="assets/css/spoon.css">
-
   	<!-- Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/gobbler.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
 
-</head>
-<body>
-	
-	<h3>Gobbler</h3>
-	
-<div class = "row"> <!-- row to contain recipe images and instructions -->
+	<body id="page2">
+		
+		<h3>Gobbler</h3>
+		
+		<div class = "row"> <!-- row to contain recipe images and instructions -->
+			<div>
+				<button id="searchAgain">Search Again</button>
+			</div>
+			<div class = "row"> <!-- row to contain recipe images and instructions -->
+				<div class="boxes col s12 m6" id="image"></div>
+				<div class="boxes col s12 m6" id="recipe">Recipe Ingredients:</div>
+			</div>	<!-- end row to contain recipe images/instructions -->
+		
+			<div class = "row">
+				<div class="boxes col s12 m12" id="instructionsArea">Recipe Instructions:</div>
+			</div>
+		</div>	<!-- end row to contain recipe images/instructions -->
 
-	<div>
-		<button id="searchAgain">Search Again</button>
-	</div>
-
-	<div class = "row"> <!-- row to contain recipe images and instructions -->
-
-	<div class="boxes col s12 m6" id="image"></div>
-	<div class="boxes col s12 m6" id="recipe">Recipe Ingredients:</div>
-</div>	<!-- end row to contain recipe images/instructions -->
-<div class = "row">
-	<div class="boxes col s12 m12" id="instructionsArea">Recipe Instructions:</div>
-</div>
-
-</div>	<!-- end row to contain recipe images/instructions -->
-
-	<div class="">
-		<ul class="collapsible" data-collapsible="accordion">
-	    <li>
-	      <div class="collapsible-header"><i class="material-icons">video_library</i>Similar Recipe Videos</div>
-	      <div class="collapsible-body">
-	      	<div id = "videoPlayer">
-	      		
-	      	</div>
-	      </div>
-	    </li>
-	    <li>
-	      <div class="collapsible-header"><i class="material-icons">assessment</i>Nutrition</div>
-	      <div class="collapsible-body"><p id = "nutritionInformation"></p></div>
-	    </li>
-	    <li>
-	      <div class="collapsible-header"><i class="material-icons">shopping_basket</i>Cost Analysis</div>
-	      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-	    </li>
-	    <li>
-	      <div class="collapsible-header"><i class="material-icons">stars</i>Cooking Tips</div>
-	      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-	    </li>
-	    <li>
-	      <div class="collapsible-header"><i class="material-icons">note_add</i>Notes</div>
-	      <div class="collapsible-body" id="notes">
-		      <p>Enter Your Cooking Notes Here: </p> 
-		      <input type="text" id="notes-added" />
-		      <button id="addtoDoNotes">Add Note</button>
-	      </div>
-	    </li>
-	  </ul>
-  </div>
+		<div class="">
+			<ul class="collapsible" data-collapsible="accordion">
+			    <li>
+			      	<div class="collapsible-header"><i class="material-icons">video_library</i>Similar Recipe Videos</div>
+			      	<div class="collapsible-body">
+			      		<div id = "videoPlayer">
+			      		</div>
+			      	</div>
+			    </li>
+			    <li>
+			      	<div class="collapsible-header"><i class="material-icons">assessment</i>Nutrition</div>
+			      	<div class="collapsible-body"><p id = "nutritionInformation"></p></div>
+			    </li>
+			    <li>
+			      	<div class="collapsible-header"><i class="material-icons">shopping_basket</i>Cost Analysis</div>
+			      	<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			    </li>
+			    <li>
+			      	<div class="collapsible-header"><i class="material-icons">stars</i>Cooking Tips</div>
+			      	<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			    </li>
+			    <li>
+			      	<div class="collapsible-header"><i class="material-icons">note_add</i>Notes</div>
+			      	<div class="collapsible-body" id="notes">
+				      	<p>Enter Your Cooking Notes Here: </p> 
+				      	<input type="text" id="notes-added" />
+				      	<button id="addtoDoNotes">Add Note</button>
+			      	</div>
+			    </li>
+		  	</ul>
+	  	</div>
 
 
 	<!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	    <!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
-  <script type="text/javascript" src="assets/javascript/localstorage2.js"></script>
-    
-  <script type="text/javascript">
-  	
-  	$(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
-  </script>
+	<script type="text/javascript" src="assets/javascript/localstorage2.js"></script>
+	    
+	<script type="text/javascript">
+	  	
+	  	$(document).ready(function(){
+	    $('.collapsible').collapsible();
+	});
+	</script>
 
-   <script type="text/javascript" src ="assets/Javascript/spoon_pg2.js"></script>
-   <script type="text/javascript" src ="assets/Javascript/bing.js"></script>
+	<script type="text/javascript" src ="assets/Javascript/spoon_pg2.js"></script>
+	<script type="text/javascript" src ="assets/Javascript/bing.js"></script>
 
-</body>
+	</body>
 </html>
+
+

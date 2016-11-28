@@ -31,6 +31,7 @@ $.ajax({ // begin ajax for food search
 
          url: "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?number=1&offset=5&query=" + search,
          type: "GET",
+         async: false,
          beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', 'sx6jftIna4mshjGfZprlulSh7Zdnp1Wp8chjsnIdYQuH4wgaUy');},
       }).done(function(result){
         console.log(result)
@@ -72,6 +73,7 @@ $.ajax({ // begin ajax for food search
                   $.ajax({
                      url:"https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/" + result.results[i].id  + "/information",
                      type: "GET",
+                     async: false,
                       beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', 'sx6jftIna4mshjGfZprlulSh7Zdnp1Wp8chjsnIdYQuH4wgaUy');},
                     }).done(function(ingredients){
                      console.log(ingredients)
@@ -109,6 +111,7 @@ $.ajax({ // begin ajax for food search
 
                               url: 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/visualizePriceEstimator',
                               type: "POST",
+                              async: false, 
                               data: {
                                     defaultCss: true,
                                     ingredientList: ingredientsArray.join("\n")  ,
@@ -125,7 +128,7 @@ $.ajax({ // begin ajax for food search
                               localStorage.setItem("costAnalysis", JSON.stringify(cost));
 
                           
-                              changeLocation()
+                              // 
                         }); // end internal ajax call for nutrition
 
 
@@ -145,6 +148,47 @@ $.ajax({ // begin ajax for food search
 
   });// end big ajax
 
+  var videoArray =[];
+
+
+    var searchvid = $("#search").val().trim();
+    var params = {
+        
+          "q": searchvid + " recipes",
+          "count": "3",
+          "offset": "0",
+          "mkt": "en-us",
+          "safeSearch": "Moderate",
+      };
+
+    var apikey = "02d1abde8b6f4aac833e43e0a6626d91";
+    var url = "https://api.cognitive.microsoft.com/bing/v5.0/videos/search?"+ $.param(params);
+
+    // create error if search is empty 
+    
+    $.ajax({
+      url: url,
+      method: 'GET',
+      beforeSend: function(xhrObj){
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", apikey);
+            }
+    })
+      .done(function(response) {
+      console.log(response)
+      for(var i = 0; i < response.value.length; i++){
+          videoArray.push(response.value[i])
+
+      }
+      localStorage.setItem('videos', JSON.stringify(videoArray));
+
+      console.log(videoArray)
+      // $("#videoplayer").html(response.value[0].embedHtml); 
+      // $("#vid1").html(response.value[0].embedHtml);
+    //  $("#vid2").html(response.value[1].embedHtml);
+    //  $("#vid3").html(response.value[2].embedHtml);
+    //  $("#vid4").html(response.value[3].embedHtml);
+      changeLocation()
+      });
       
 // 
 }); //end click
