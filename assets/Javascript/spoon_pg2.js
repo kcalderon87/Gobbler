@@ -21,6 +21,7 @@ var page2ingredients =JSON.parse(localStorage.getItem("ingredientsList"));
 var page2nutrition = JSON.parse(localStorage.getItem("nutrition"));
 var page2instructions = JSON.parse(localStorage.getItem("instructions"));
 var page2videos = JSON.parse(localStorage.getItem('videos'));
+var page2cost = JSON.parse(localStorage.getItem('costAnalysis'));
 var image = page2ingredients.image;
 
 
@@ -94,11 +95,15 @@ else{
 // }// end attaching videos
 
 for (var i = 0; i < page2videos.length; i++) {
-
-  $("#videoPlayer").append(page2videos[i].embedHtml)
-  console.log(page2videos[i].embedHtml)
+  
+  
+  $("#videoPlayer").append(page2videos[i].embedHtml.replace("?autoplay=1", ""))
+  console.log(page2videos[i].embedHtml.replace("?autoplay=1", ""))
 
 }
 
+// attach cost analysis
+
+$("#cost").append(page2cost);
 
 }); // end doc ready

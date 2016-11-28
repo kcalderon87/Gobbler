@@ -9,7 +9,7 @@ $(document).ready(function(){
 		var searchvid = $("#search").val().trim();
 		var params = {
 	    	
-	        "q": searchvid,
+	        "q": searchvid + " recipes",
 	        "count": "3",
 	        "offset": "0",
 	        "mkt": "en-us",

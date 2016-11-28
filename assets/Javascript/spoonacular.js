@@ -98,12 +98,37 @@ $.ajax({ // begin ajax for food search
                               beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', 'sx6jftIna4mshjGfZprlulSh7Zdnp1Wp8chjsnIdYQuH4wgaUy');},
                               }).done(function(health){
                                  
-                              console.log(ingredientsArray[1] + " ingredients")
-                              console.log(health);
+                              // console.log(ingredientsArray[1] + " ingredients")
+                              // console.log(health);
 
                               localStorage.setItem("nutrition",JSON.stringify(health))
-                              // changeLocation()
+                           
                         }); // end internal ajax call for nutrition
+
+                               $.ajax({ // begin internal ajax call for price
+
+                              url: 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/visualizePriceEstimator',
+                              type: "POST",
+                              data: {
+                                    defaultCss: true,
+                                    ingredientList: ingredientsArray.join("\n")  ,
+                                    mode: 2,
+                                    servings: 1,
+                                    showBacklink: true,
+
+                                 },
+                              beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', 'sx6jftIna4mshjGfZprlulSh7Zdnp1Wp8chjsnIdYQuH4wgaUy')
+                                                        xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');},
+                              }).done(function(cost){
+                                 
+                              // console.log(ingredientsArray[1] + " ingredients")
+                              localStorage.setItem("costAnalysis", JSON.stringify(cost));
+
+                          
+                              changeLocation()
+                        }); // end internal ajax call for nutrition
+
+
                       }); //end of ajax for ingredients
 
                      
