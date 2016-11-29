@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
+	    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<title>Search Results</title>
-	<!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-  	<link rel="stylesheet" type="text/css" href="assets/css/spoon.css">
-  	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="assets/css/gobbler.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Gobbler Recipe Search</title>
+		
+		<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Ruge+Boogie" rel="stylesheet">
+	    
 
-	</head>
+	    <link rel="stylesheet" type="text/css" href="assets/CSS/gobbler.css">
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.js"
+	  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	  crossorigin="anonymous"></script>
+
+  	</head>
 
 	<body id="page2">
 		
@@ -25,11 +30,11 @@
 			</div>
 			<div class = "row"> <!-- row to contain recipe images and instructions -->
 				<div class="boxes col s12 m6" id="image"></div>
-				<div class="boxes col s12 m6" id="recipe">Recipe Ingredients:</div>
+				<div class="boxes col s12 m6" id="recipe"><span>Recipe Ingredients:</span></div>
 			</div>	<!-- end row to contain recipe images/instructions -->
 		
 			<div class = "row">
-				<div class="boxes col s12 m12" id="instructionsArea">Recipe Instructions:</div>
+				<div class="boxes col s12 m12" id="instructionsArea"><span>Recipe Instructions:</span></div>
 			</div>
 		</div>	<!-- end row to contain recipe images/instructions -->
 
@@ -51,10 +56,6 @@
 			      	<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
 			    </li>
 			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">stars</i>Cooking Tips</div>
-			      	<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-			    </li>
-			    <li>
 			      	<div class="collapsible-header"><i class="material-icons">note_add</i>Notes</div>
 			      	<div class="collapsible-body" id="notes">
 				      	<p>Enter Your Cooking Notes Here: </p> 
@@ -71,6 +72,8 @@
 	    <!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
+	
+
 	<script type="text/javascript" src="assets/javascript/localstorage2.js"></script>
 	    
 	<script type="text/javascript">
@@ -81,9 +84,6 @@
 	</script>
 
 	<script type="text/javascript" src ="assets/Javascript/spoon_pg2.js"></script>
-	<script type="text/javascript" src ="assets/Javascript/bing.js"></script>
 
 	</body>
 </html>
-
-
