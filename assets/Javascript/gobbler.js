@@ -3,26 +3,26 @@ $('document').ready(function(){
 
 
 // holds background images
-var images=['../Gobbler/assets/images/foodImage1.jpg', 
-			  '../Gobbler/assets/images/foodImage2.jpg', 
-			  '../Gobbler/assets/images/foodImage3.jpg', 
-			  '../Gobbler/assets/images/foodImage4.jpg', 
-			  '../Gobbler/assets/images/foodImage5.jpg', 
-			  '../Gobbler/assets/images/foodImage6.jpg', 
-			  '../Gobbler/assets/images/foodImage7.jpg', 
-			  '../Gobbler/assets/images/foodImage8.jpg', 
-			  '../Gobbler/assets/images/foodImage9.jpg',
-			  '../Gobbler/assets/images/foodImage10.jpg',
-			  '../Gobbler/assets/images/foodImage11.jpg',
-			  '../Gobbler/assets/images/foodImage12.jpg', 
-			  '../Gobbler/assets/images/foodImage13.jpg', 
-			  '../Gobbler/assets/images/foodImage14.jpg', 
-			  '../Gobbler/assets/images/foodImage15.jpg', 
-			  '../Gobbler/assets/images/foodImage16.jpg', 
-			  '../Gobbler/assets/images/foodImage17.jpg', 
-			  '../Gobbler/assets/images/foodImage18.jpg',
-			  '../Gobbler/assets/images/foodImage19.jpg', 
-			  '../Gobbler/assets/images/foodImage20.jpg'
+var images=['assets/images/foodImage1.jpg', 
+			  'assets/images/foodImage2.jpg', 
+			  'assets/images/foodImage3.jpg', 
+			  'assets/images/foodImage4.jpg', 
+			  'assets/images/foodImage5.jpg', 
+			  'assets/images/foodImage6.jpg', 
+			  'assets/images/foodImage7.jpg', 
+			  'assets/images/foodImage8.jpg', 
+			  'assets/images/foodImage9.jpg',
+			  'assets/images/foodImage10.jpg',
+			  'assets/images/foodImage11.jpg',
+			  'assets/images/foodImage12.jpg', 
+			  'assets/images/foodImage13.jpg', 
+			  'assets/images/foodImage14.jpg', 
+			  'assets/images/foodImage15.jpg', 
+			  'assets/images/foodImage16.jpg', 
+			  'assets/images/foodImage17.jpg', 
+			  'assets/images/foodImage18.jpg',
+			  'assets/images/foodImage19.jpg', 
+			  'assets/images/foodImage20.jpg'
 			  ];
 
 //--------------HOME PAGE RANDOM BACKGROUND LOOP STARTS-------------------
