@@ -31,6 +31,7 @@ console.log(page2recipe);
 console.log(page2ingredients.extendedIngredients);
 
  console.log(page2instructions);
+ console.log(page2cost);
 
 
 // area where the ingredients are gathered from local memory, and put into recipe area

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 
 	<title>Search Results</title>
@@ -26,33 +25,33 @@
 			</div>
 			<div class = "row"> <!-- row to contain recipe images and instructions -->
 				<div class="boxes col s12 m6" id="image"></div>
-				<div class="boxes col s12 m6" id="recipe">Recipe Ingredients:</div>
+				<div class="boxes col s12 m6" id="recipe"><span>Recipe Ingredients:</span></div>
 			</div>	<!-- end row to contain recipe images/instructions -->
 		
 			<div class = "row">
-				<div class="boxes col s12 m12" id="instructionsArea">Recipe Instructions:</div>
+				<div class="boxes col s12 m12" id="instructionsArea"><span>Recipe Instructions:</span></div>
 			</div>
 		</div>	<!-- end row to contain recipe images/instructions -->
 
 		<div class="">
 			<ul class="collapsible" data-collapsible="accordion">
 			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">video_library</i>Similar Recipe Videos</div>
+			      	<div class="collapsible-header"><i class="material-icons">video_library</i><span>Similar Recipe Videos</span></div>
 			      	<div class="collapsible-body">
 			      		<div id = "videoPlayer">
 			      		</div>
 			      	</div>
 			    </li>
 			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">assessment</i>Nutrition</div>
+			      	<div class="collapsible-header"><i class="material-icons">assessment</i><span>Nutrition</span></div>
 			      	<div class="collapsible-body"><p id = "nutritionInformation"></p></div>
 			    </li>
 			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">shopping_basket</i>Cost Analysis</div>
-			      	<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			      	<div class="collapsible-header"><i class="material-icons">shopping_basket</i><span>Cost Analysis</span></div>
+			      	<div class="collapsible-body"><p id ="cost"></p></div>
 			    </li>
 			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">note_add</i>Notes</div>
+			      	<div class="collapsible-header"><i class="material-icons">note_add</i><span>Notes</span></div>
 			      	<div class="collapsible-body" id="notes">
 				      	<p>Enter Your Cooking Notes Here: </p> 
 				      	<input type="text" id="notes-added" />
@@ -78,6 +77,9 @@
 	</script>
 
 	<script type="text/javascript" src ="assets/Javascript/spoon_pg2.js"></script>
+	<script type="text/javascript" src ="assets/Javascript/bing.js"></script>
 
 	</body>
 </html>
+
+
