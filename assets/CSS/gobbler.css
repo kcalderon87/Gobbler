@@ -5,10 +5,6 @@
     width:100%;
 }
 
-#firstRow {
-	margin-top: 5%;
-}
-
 h1 {
 	font-family: 'Pacifico', cursive;
 	text-align: center;
@@ -23,7 +19,7 @@ h1 {
 	margin-left: 425px;
 }
 
-nav{
+nav {
 	background: rgba(77,40,0, 0.6);
     border: 10px double #ffeecc;
 }
@@ -35,6 +31,10 @@ nav:hover{
 
 i.material-icons {
 	color: #ffeecc;	
+}
+
+#search {
+	margin-bottom: 0px;
 }
 
 .btn-large {
@@ -60,119 +60,87 @@ i.material-icons:hover {
 nav:hover .material-icons {
 	color: #4d2800;
 }
-
 /*-----------------------------------------------------------*/
-
-
-/*deleted items to match what lance has on his css, pg 2*/
 .boxes {	
 	text-align: center;
-	display: inline;		
+	display: inline-block;	
 }
-.row {
-	margin-left: 5px;
-	margin-right: 5px;
+/*.row {
+	margin-left: 5%;
+	margin-right: 5%;
+}*/
+#page2 {
+	background: rbga(0, 0, 0, 0.5);
+	background-image: url("../images/kitchen2.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;	
+}
+#navPg2 {
+	height: 180px;
+	margin-bottom: 50px;
+	background: rgba(77,40,0, .6);
+    border: 10px inset #ffeecc;
+}
+h2 {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	color: #ffeecc;
+	background: rgba(77,40,0, 0.7);
+    border: 10px double #ffeecc;
+	border-radius:150px;
+	padding: 30px 55px;
+	margin: 10px 125px;
+}	
+
+.pg2btns1 {
+	color: #ffeecc;
+	background: rgba(77,40,0, 0.8);
+    border: 10px double #ffeecc;
+    margin: 20px 40px 0px 0px;
+    height:120px;
+    width: 280px;
+}
+.pg2btns1:hover {
+	background: rgba(255,238,204, 0.8);
+	color: #4d2800;
+	border: 10px double #4d2800;
 }
 
-.collapsible{
-	margin: 10px;
+.pg2btns2 {
+	color: #ffeecc;
+	background: rgba(77,40,0, 0.8);
+    border: 10px double #ffeecc;
+    margin: 20px 125px 0px 0px;
+    height:120px;
+    width: 280px;
+}
+.pg2btns2:hover {
+	background: rgba(255,238,204, 0.8);
+	color: #4d2800;
+	border: 10px double #4d2800;
 }
 
+#btn2 {
+	margin-right: 70px;
+}
+#image {
+	display: inline-block;
+	color: #ffeecc;
+	background: rgba(77,40,0, .8);
+    border: 10px inset #ffeecc;
+    padding-bottom: 30px;
+	width: 650px;
+	margin-right: 20px;
+	margin-left: 8%;
+}
 .foodPic {
 	max-height: 100%;
 	height: 300px;
     width: 350px;
    	overflow: auto;
 }
-
-.collapsible-body{
-	background: #ffeecc;
-}
- 
-iframe{
-	width: 600px;
-	height: 400px;
-	max-width: 100%;
-	position: center;
-	display: block;
-    margin: 0 auto;
-    margin-top:5px;
-}
-
-h3 {
-	font-family: 'Pacifico', cursive;
-	text-align: center;
-	float: left;
-	margin-left: 5px;
-	color: #ffeecc;
-	background: rgba(77,40,0, 0.6);
-    border: 10px double #ffeecc;
-	border-radius:150px;
-	padding: 12px 30px;
-}	
-
-#searchAgain {
-	color: #ffeecc;
-	background: rgba(77,40,0, 0.6);
-    border: 10px double #ffeecc;
-    float: right;
-    margin-right: 2%;
-    margin-top: 20px;
-}
-
-#searchAgain:hover {
-	background: rgba(255,238,204, 0.6);
-	color: #4d2800;
-	border: 10px double #4d2800;
-	opacity: .50;
-}
-
-#page2 {
-	background-color: #ffeecc;
-	background-image: url("assets/images/kitchen1.jpg");
-}
-
-#image {
-	clear: left;
-	color: #ffeecc;
-	background: rgba(77,40,0, 0.6);
-    border: 10px double #ffeecc;
-    padding-bottom: 15px;
-}
-span {
-	font-weight: bold;
-	font-size: 25px;
-	color: #4d2800;
-
-}
-#recipe {
-	color: #4d2800;
-	/*background: rgba(255,238,204, 0.6);
-	border: 10px double #4d2800;*/
-    padding-top: 30px;
-}
-
-#instructionsArea {
-	text-align: justify;
-	color: #4d2800;
-	background: rgba(255,238,204, 0.6);
-	border: 10px double #4d2800;
-	padding: 30px 20px 20px 20px;
-}
-#addtoDoNotes {
-	margin-left: 15px;
-	margin-bottom: 10px;
-	color: #ffeecc;
-	background: rgba(77,40,0, 0.6);
-    border: 5px double #ffeecc;
-}
-
-#addtoDoNotes:hover {
-	background: rgba(255,238,204, 0.6);
-	color: #4d2800;
-	border: 5px double #4d2800;
-}    
-
 .imgfoodPic {
 	max-width: 100%;
 	width: 150px;
@@ -182,21 +150,77 @@ span {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+#recipe-box {
+	display: inline-block;
+	float: right;
+	background: rgba(77,40,0, .8);
+	width: 700px;
+	border: 10px inset #ffeecc;
+	margin-left: 20px;
+	margin-right: 8%;
+}
+#recipe {
+	margin: 20px auto;
+	color: #4d2800;
+	background-color: white;	
+    padding: 30px 20px;
+    width: 300px;
+}
+span {
+	font-weight: bold;
+	font-size: 25px;
+	color: #4d2800;
+}
+#instructionsArea {
+	text-align: justify;
+	color: #4d2800;
+	background-color: white;
+	border: 10px inset #ffeecc;
+	padding: 30px 20px 20px 20px;
+}	
+.ytp-thumbnail-overlay-image{
+	width: 33%;
+	height: 300px;
+	max-width: 100%;
+	padding-right: 5px;
+	padding-left: 5px;
+	position: center;
+	display: inline-block;
+    margin: 0 auto;
+    margin-top:5px;
+}
 
-.collapsible-header {
+/*--------CSS for Recipe instructions and accordian-----------*/
+
+#addtoDoNotes {
+	margin-left: 15px;
+	margin-bottom: 10px;
 	color: #ffeecc;
 	background: rgba(77,40,0, 0.6);
+    border: 5px double #ffeecc;
 }
-
-.collapsible-header:hover {
+#addtoDoNotes:hover {
 	background: rgba(255,238,204, 0.6);
 	color: #4d2800;
-}
-.collapsible-header:hover .material-icons {
-	color: #4d2800;
-}	
+	border: 5px double #4d2800;
+}    
 
-#searchBtn {
-	height: 65px;
+ #glass{
+	margin-top: -10px;
+	margin-left: 10px;
 }
-
+#cloud{
+	margin-top: -10px;
+	margin-left: -7px;
+}
+#find{
+	position: relative;
+	top: -10px;
+	color: #ffeecc;
+}
+.tag{
+	margin-top: -10px;
+}
+.error{
+	text-align: center;
+}

@@ -1,67 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 	<link rel="icon" href="assets/images/Turkey.gif">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<title>Search Results</title>
-	
-	<!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<meta name="description" content="Tabbed - HTML5 &amp; CSS3 Tabs and Elements Pack Quick Start" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <!-- Compiled and minified CSS -->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
   	<link rel="stylesheet" type="text/css" href="assets/CSS/spoon.css">
   	<!-- Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/CSS/gobbler.css">
+
+	<!-- Tabbed stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/CSS/tabbed.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="assets/CSS/demo.css" media="screen" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 	</head>
 
 	<body id="page2">
-		
-		<h3>Gobbler</h3>
-		
-		<div class = "row"> <!-- row to contain recipe images and instructions -->
-			<div>
-				<button id="searchAgain">Search Again</button>
-			</div>
-			<div class = "row"> <!-- row to contain recipe images and instructions -->
-				<div class="boxes col s12 m6" id="image"></div>
-				<div class="boxes col s12 m6" id="recipe"><span>Recipe Ingredients:</span></div>
-			</div>	<!-- end row to contain recipe images/instructions -->
-		
-			<div class = "row">
-				<div class="boxes col s12 m12" id="instructionsArea"><span>Recipe Instructions:</span></div>
-			</div>
-		</div>	<!-- end row to contain recipe images/instructions -->
 
-		<div class="">
-			<ul class="collapsible" data-collapsible="accordion">
-			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">video_library</i><span>Similar Recipe Videos</span></div>
-			      	<div class="collapsible-body">
-			      		<div id = "videoPlayer">
-			      		</div>
-			      	</div>
-			    </li>
-			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">assessment</i><span>Nutrition</span></div>
-			      	<div class="collapsible-body"><p id = "nutritionInformation"></p></div>
-			    </li>
-			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">shopping_basket</i><span>Cost Analysis</span></div>
-			      	<div class="collapsible-body"><p id ="cost"></p></div>
-			    </li>
-			    <li>
-			      	<div class="collapsible-header"><i class="material-icons">note_add</i><span>Notes</span></div>
-			      	<div class="collapsible-body" id="notes">
-				      	<p>Enter Your Cooking Notes Here: </p> 
-				      	<input type="text" id="notes-added" />
-				      	<button id="addtoDoNotes">Add Note</button>
-			      	</div>
-			    </li>
-		  	</ul>
-	  	</div>
+		<nav id="navPg2"> <!-- start heading and search buttons -->
+			<div class="nav-wrapper">
+			    <a href="" class="brand-logo"><h2>Gobbler</h2></a>
+			    <ul id="nav-mobile" class="right hide-on-med-and-down">
+			      	<li><button class="pg2btns1" id="newSearch"><i class="material-icons">search</i><p class ="tag">New Search</button></li>
+			      	<li><button class="pg2btns2" id="searchAgain"><i class="material-icons">restaurant</i><p class ="tag">I want something different</p></button></li>
+			    </ul>
+			</div>
+		</nav> <!-- ends heading and search buttons -->
+		
+		
+		<div class = "row"> <!-- row contains recipe images and ingredients -->
+			<div class="boxes col s12 m6" id="image"></div>
+			<div class="boxes col s12 m6" id="recipe-box"><div id="recipe"><span>Recipe Ingredients:</span><ul id= "recipe2"></ul></div></div>
+			
+		</div>	<!-- end row containing recipe images and ingredients -->
+
+		<div class = "row"> <!-- row contains recipe instructions -->
+			<div class="boxes col s12 m1"></div>
+			<div class="boxes col s12 m10" id="instructionsArea"><span>Recipe Instructions:</span><ol id = instructions2></ol></div>
+			<div class="boxes col s12 m1"></div>
+		</div>	<!-- end row containing recipe instructions -->
+
+		
+		<div id="demo">
+
+		<section id="tabbed">
+			<!-- First tab input and label -->
+			<!-- \<input id="t-1" name="tabbed-tabs" type="radio" checked="checked" />
+			<label for="t-1" class="tabs shadow entypo-star">Instructions</label> -->
+			<!-- Second tab input and label -->
+			<input id="t-1" name="tabbed-tabs" type="radio" checked="checked" />
+			<label for="t-1" class="tabs shadow entypo-heart">Nutrition</label>
+		
+			<!-- Third tab input and label -->
+			<input id="t-2" name="tabbed-tabs" type="radio" />
+			<label for="t-2" class="tabs shadow entypo-play">Videos</label>
+			
+			
+			<!-- Fourth tab input and label -->
+			<input id="t-3" name="tabbed-tabs" type="radio" />
+			<label for="t-3" class="tabs shadow entypo-chart-pie">Cost Analysis</label>
+			<!-- Fifth tab input and label -->
+			<input id="t-4" name="tabbed-tabs" type="radio" />
+			<label for="t-4" class="tabs shadow entypo-pencil">Notes</label>
+
+			<!-- Tabs wrapper -->
+			<div class="wrapper shadow">
+
+			
+				<!-- / Tab 1 content -->
+				
+				<div class="tab-1">
+					<div class="row">
+						<div class="cell w-100">
+							<!-- Large title -->
+							<div class="title large">Nutrition</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell w-100">
+							<!-- Large paragraph -->
+							<p class="large" id = "nutritionInformation"></p>
+						</div>
+					</div>
+				</div>
+				<!-- / Tab 3 content -->
+
+					<!-- Tab 2 content -->
+				<div class="tab-2">
+					<div class="row">
+						<div class="cell w-100">
+							<!-- Large title -->
+							<div class="title large">Related Recipe Videos</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell w-100">
+							<!-- Large paragraph -->
+							<p class="large"></p>
+							<div id = "videoPlayer"></div>
+						</div>
+					</div>
+				</div>
+				<!-- / Tab 2 content -->
+
+
+				<!-- Tab 4 content -->
+				<div class="tab-3">
+					<div class="row">
+						<div class="cell w-100">
+							<!-- Large title -->
+							<div class="title large">Cost Analysis</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell w-100">
+							<!-- Large paragraph -->
+							<p class="large" id ="cost"></p>
+						</div>
+					</div>
+				</div>
+				<!-- / Tab 4 content -->
+
+				<!-- Tab 5 content -->
+				<div class="tab-4">
+					<div class="row">
+						<div class="cell w-100">
+							<!-- Large title -->
+							<div class="title large">Enter Your Cooking Notes Here</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell w-100">
+							<!-- Large paragraph -->
+							
+							<input type="text" id="notes-added" />
+				      		<button id="addtoDoNotes">Add Note</button>
+				      		<p class="large" id="notes"></p>
+						</div>
+					</div>
+				</div>
+				<!-- / Tab 5 content -->
+			</div>
+			<!-- / Tabs wrapper -->
+		</section>
+
+	</div>
+
 
 
 	<!--Import jQuery before materialize.js-->
@@ -69,18 +164,9 @@
 	    <!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
-	<script type="text/javascript" src="assets/Javascript/localstorage2.js"></script>
-	    
-	<script type="text/javascript">
-	  	
-	  	$(document).ready(function(){
-	    $('.collapsible').collapsible();
-	});
-	</script>
+	<script type="text/javascript" src="assets/javascript/localstorage2.js"></script>
 
 	<script type="text/javascript" src ="assets/Javascript/spoon_pg2.js"></script>
 
 	</body>
 </html>
-
-

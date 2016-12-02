@@ -5,7 +5,7 @@ var counter2 = 0;
 var ingredientsArray = [];
 var instructionsArray = [];
 var baseImage = "https://spoonacular.com/recipeImages/"
-
+var rand = Math.floor(Math.random() * 30) + 1;
 
 function changeLocation(){
 
@@ -22,14 +22,14 @@ function goBack(){
 
 $("#searchBtn").on("click",function(){
     var search = $("#search").val()
-
+    localStorage.setItem("searchTerm", search)
 
 console.log(search)
 
 var counter = 0;
 $.ajax({ // begin ajax for food search
 
-         url: "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?number=1&offset=5&query=" + search,
+         url: "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?number=1&offset="+ rand +"&query=" + search,
          type: "GET",
          async: false,
          beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', 'sx6jftIna4mshjGfZprlulSh7Zdnp1Wp8chjsnIdYQuH4wgaUy');},
@@ -155,7 +155,7 @@ $.ajax({ // begin ajax for food search
     var params = {
         
           "q": searchvid + " recipes",
-          "count": "3",
+          "count": "4",
           "offset": "0",
           "mkt": "en-us",
           "safeSearch": "Moderate",
