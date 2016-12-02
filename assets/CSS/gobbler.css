@@ -6,7 +6,7 @@
 }
 
 h1 {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Tangerine', cursive;
 	text-align: center;
 	font-size: 200px;
 	color: #4d2800;
@@ -14,9 +14,9 @@ h1 {
 	border: 20px double #4d2800;
 	border-radius:150px;
 	padding-top: 25px;
-	padding-bottom: 30px;
-	margin-right: 425px;
-	margin-left: 425px;
+	padding-bottom: 25px;
+	margin-right: 450px;
+	margin-left: 450px;
 }
 
 nav {
@@ -57,9 +57,7 @@ i.material-icons:hover {
 	color: #4d2800;
 }
 
-nav:hover .material-icons {
-	color: #4d2800;
-}
+
 /*-----------------------------------------------------------*/
 .boxes {	
 	text-align: center;
@@ -79,27 +77,28 @@ nav:hover .material-icons {
 }
 #navPg2 {
 	height: 180px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	background: rgba(77,40,0, .6);
     border: 10px inset #ffeecc;
 }
 h2 {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Tangerine', cursive;
 	text-align: center;
 	color: #ffeecc;
 	background: rgba(77,40,0, 0.7);
     border: 10px double #ffeecc;
 	border-radius:150px;
-	padding: 30px 55px;
+	padding: 20px 55px;
 	margin: 10px 125px;
+	margin-top: 20px;
 }	
 
 .pg2btns1 {
 	color: #ffeecc;
 	background: rgba(77,40,0, 0.8);
     border: 10px double #ffeecc;
-    margin: 20px 40px 0px 0px;
-    height:120px;
+    margin: 25px 20px 0px 0px;
+    height:100px;
     width: 280px;
 }
 .pg2btns1:hover {
@@ -112,8 +111,8 @@ h2 {
 	color: #ffeecc;
 	background: rgba(77,40,0, 0.8);
     border: 10px double #ffeecc;
-    margin: 20px 125px 0px 0px;
-    height:120px;
+    margin: 25px 125px 0px 0px;
+    height:100px;
     width: 280px;
 }
 .pg2btns2:hover {
@@ -219,7 +218,7 @@ span {
 	color: #ffeecc;
 }
 .tag{
-	margin-top: -10px;
+	margin-top: -35px;
 }
 .error{
 	text-align: center;
