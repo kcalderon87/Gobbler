@@ -6,17 +6,17 @@
 }
 
 h1 {
-	font-family: 'Tangerine', cursive;
-	text-align: center;
-	font-size: 225px;
-	color: #4d2800;
-	background: rgba(255,238,204, 0.6);
-	border: 20px double #4d2800;
-	border-radius:175px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	margin-right: 450px;
-	margin-left: 450px;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 225px;
+    color: #4d2800;
+    background: rgba(255,238,204, 0.6);
+    border: 20px double #4d2800;
+    border-radius:175px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+/*    margin-right: 450px;
+    margin-left: 450px;*/
 }
 
 nav {
@@ -190,7 +190,7 @@ span {
     margin-top:5px;
 }
 
-/*--------CSS for Recipe instructions and accordian-----------*/
+/*--------CSS for Notes-----------*/
 
 #addtoDoNotes {
 	margin-left: 15px;
@@ -205,6 +205,12 @@ span {
 	border: 5px double #4d2800;
 }    
 
+/*---------CSS for first page icons and such--------*/
+ 
+#searchbtn {
+	
+
+}
  #glass{
 	margin-top: -10px;
 	margin-left: 10px;
