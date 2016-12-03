@@ -109,17 +109,17 @@ h2 {
 }
 
 .pg2btns2 {
-	color: #ffeecc;
-	background: rgba(77,40,0, 0.8);
-    border: 10px double #ffeecc;
-    margin: 25px 125px 0px 0px;
-    height:100px;
-    width: 280px;
+    color: #ffeecc ;
+    background: rgba(77,40,0, 0.8) !important;
+   border: 10px double #ffeecc ;
+   margin: 25px 125px 0px 0px;
+   height:100px;
+   width: 280px;
 }
-.pg2btns2:focus {
-	background: rgba(255,238,204, 0.8);
-	color: #4d2800;
-	border: 10px double #4d2800;
+.pg2btns2:hover {
+    background: rgba(255,238,204, 0.8) !important;
+    color: #4d2800 ;
+    border: 10px double #4d2800 ;
 }
 
 .pg2btns1:hover .material-icons {
