@@ -116,7 +116,7 @@ h2 {
     height:100px;
     width: 280px;
 }
-.pg2btns2:hover {
+.pg2btns2:focus {
 	background: rgba(255,238,204, 0.8);
 	color: #4d2800;
 	border: 10px double #4d2800;
