@@ -122,6 +122,13 @@ h2 {
 	border: 10px double #4d2800;
 }
 
+.pg2btns1:hover .material-icons {
+    color: #4d2800 ;
+}
+.pg2btns2:hover .material-icons {
+    color: #4d2800 ;
+}
+
 #btn2 {
 	margin-right: 70px;
 }
