@@ -3,7 +3,7 @@
     max-width: 100%;
     height: 100%;
     width:100%;
-     zoom: 70%;
+    
 }
 
 h1 {
@@ -38347,4 +38347,25 @@ span {
 }
 .error{
 	text-align: center;
+}
+
+
+@media screen and (min-width: 580px) {
+  .container{
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width:100%;
+     zoom: 70%;
+	 }
+}
+
+@media screen and (max-width: 580px) {
+  .container{
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width:100%;
+     zoom: 70%;
+	}
 }
