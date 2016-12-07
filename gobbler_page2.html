@@ -28,10 +28,13 @@
 	</head>
 
 	<body id="page2">
+	
+	<div class = "container">
 
 		<nav id="navPg2"> <!-- start heading and search buttons -->
-			<div class="nav-wrapper">
+			<div class="nav-wrapper s12">
 			    <a href="" class="brand-logo"><h2>Gobbler</h2></a>
+			    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			    <ul id="nav-mobile" class="right hide-on-med-and-down">
 			      	<li><button class="pg2btns1" id="newSearch"><i class="material-icons">search</i><p class ="tag">New Search</button></li>
 			      	<li><button class="pg2btns2" id="searchAgain"><i class="material-icons">restaurant</i><p class ="tag">I want something different</p></button></li>
@@ -41,15 +44,15 @@
 		
 		
 		<div class = "row"> <!-- row contains recipe images and ingredients -->
-			<div class="boxes col s12 m6" id="image"></div>
-			<div class="boxes col s12 m6" id="recipe-box"><div id="recipe"><span>Recipe Ingredients:</span><ul id= "recipe2"></ul></div></div>
+			<div class="boxes col s6 pull-s1 m5" id="image"></div>
+			<div class="boxes col s6 push-s2 m5" id="recipe-box"><div id="recipe"><span>Recipe Ingredients:</span><ul id= "recipe2"></ul></div></div>
 			
 		</div>	<!-- end row containing recipe images and ingredients -->
 
 		<div class = "row"> <!-- row contains recipe instructions -->
 			<div class="boxes col s12 m1"></div>
 			<div class="boxes col s12 m10" id="instructionsArea"><span>Recipe Instructions:</span><ol id = instructions2></ol></div>
-			<div class="boxes col s12 m1"></div>
+			<div class="boxes col s12  m1"></div>
 		</div>	<!-- end row containing recipe instructions -->
 
 		
@@ -158,7 +161,7 @@
 
 	</div>
 
-
+</div><!--  end container -->
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
